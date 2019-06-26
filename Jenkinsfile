@@ -4,7 +4,7 @@ pipeline {
     stage('Build&Test') {
       agent {
         node {
-          label 'docker-jdk-agent'
+          label 'docker-1'
         }
 
       }
@@ -16,7 +16,7 @@ pipeline {
     stage('Report & Publish') {
       agent {
         node {
-          label 'docker-jdk-agent'
+          label 'docker-1'
         }
 
       }
